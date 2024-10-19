@@ -1,7 +1,7 @@
 // app/blog/[slug]/page.js
-import { Prose } from '@/app/components/Prose';
-import { fetchPostBySlug } from '../../lib/api';
-import { renderRichText } from '../../lib/utils';
+import { Prose } from '@/components/Prose';
+import { fetchPostBySlug } from '../../../lib/api';
+import { renderRichText } from '../../../lib/utils';
 
 interface PostParams {
   slug: string;
@@ -11,7 +11,6 @@ export default async function BlogPost({ params }: { params: PostParams }) {
   const { slug } = params;
   const post = await fetchPostBySlug(slug);
 
-  console.log(post.richtext, 'post.richtext');
 
   if (!post) {
     return <div className="p-4 text-center">Post not found</div>;

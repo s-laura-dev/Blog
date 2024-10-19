@@ -1,7 +1,7 @@
 // app/blog/page.js
-import { fetchPosts } from '../lib/api';
-import CustomLink from '../components/Link';
-import {Card} from '../components/Card';
+import { fetchPosts } from '../../lib/api';
+import CustomLink from '../../components/Link';
+import {Card} from '../../components/Card';
 
 interface Post {
   id: string;

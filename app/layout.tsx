@@ -1,15 +1,17 @@
 // app/layout.tsx (or your relevant layout file)
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
+import Footer from "@/components/Footer";
+import CustomLink from "@/components/Link";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -35,18 +37,19 @@ export default function RootLayout({
               <a href="/">Laura Spina Dev</a>
             </h1>
             <div>
-              <a href="/" className="mx-4 text-blue-600 hover:underline">
+              <CustomLink href="/" className="mx-4 text-blue-600 hover:underline">
                 Home
-              </a>
-              <a href="/blog" className="mx-4 text-blue-600 hover:underline">
+              </CustomLink>
+              <CustomLink href="/blog" className="mx-4 text-blue-600 hover:underline">
                 Blog
-              </a>
+              </CustomLink>
             </div>
           </div>
         </nav>
-        <main className="container mx-auto my-8 px-4">
+        <main className="flex-grow container mx-auto my-8 px-4">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
