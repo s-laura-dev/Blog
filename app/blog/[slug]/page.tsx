@@ -17,7 +17,7 @@ export default async function BlogPost({ params }: { params: PostParams }) {
   }
 
   return (
-    <article className="max-w-2xl mx-auto p-4">
+    <article className="max-w-2xl mt-12 mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
      <Prose>
         {renderRichText(post.richtext)} 
