@@ -1,9 +1,8 @@
 // app/page.js
-import { ButtonLink } from '@/components/ButtonLink';
 import {CustomLink} from '@/components/Link';
 import Image from 'next/image';
 
-export default function Home() {
+export default function About() {
   return (
     <div className="container mx-auto my-12 px-4 min-h-screen">
       {/* Introduction */}
@@ -16,8 +15,8 @@ export default function Home() {
           className="rounded-full mx-auto mb-4"
         />
         <h1 className="text-4xl font-bold mb-4">Hi 👋, I'm Laura</h1>
-        <p className="text-xl text-gray-600">Frontend Developer @Christian Dior | Based in Paris 🇫🇷</p>
-        <p className="text-lg text-gray-500 mt-2">
+        <p className="text-xl text-electricBlue">Frontend Developer @Christian Dior | Based in Paris 🇫🇷</p>
+        <p className="text-lg text-electricBlue mt-2">
         React | Next.js | Vue | Nuxt | Node.js | GraphQL | Tailwind CSS
         </p>
       </section>
@@ -48,9 +47,9 @@ export default function Home() {
         <p className="text-lg text-gray-600 mb-6">
           I write about all things frontend, from React and Vue.js to JavaScript, CSS, and more.
         </p>
-        <ButtonLink href="/blog" className="border border-electricBlue m-x-auto place-self-center w-fit text-electricBlue px-6 py-3 text-lg font-semibold ">
+        <CustomLink href="/blog" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700">
             Visit My Blog 🚀
-        </ButtonLink>
+        </CustomLink>
       </section>
     </div>
   );

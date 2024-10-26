@@ -7,12 +7,12 @@ interface CustomLinkProps {
   className?: string;
 }
 
-const CustomLink = ({ href, children, className }: CustomLinkProps) => {
+export const CustomLink = ({ href, children, className, ...props }: CustomLinkProps) => {
   return (
-    <Link href={href} className={`text-blue-600 hover:underline ${className}`}>
+    <Link href={href} className={`text-electricBlue hover-underline ${className} `} {...props}>
       {children}
     </Link>
   );
 };
 
-export default CustomLink;
+

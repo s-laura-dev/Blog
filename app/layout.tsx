@@ -2,8 +2,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
-import Footer from "@/components/Footer";
-import CustomLink from "@/components/Link";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/NavBar";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -29,23 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-800`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-beige text-electricBlue`}
       >
-        <nav className="bg-white shadow-md p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-2xl font-bold">
-              <a href="/">Laura Spina Dev</a>
-            </h1>
-            <div>
-              <CustomLink href="/" className="mx-4 text-blue-600 hover:underline">
-                Home
-              </CustomLink>
-              <CustomLink href="/blog" className="mx-4 text-blue-600 hover:underline">
-                Blog
-              </CustomLink>
-            </div>
-          </div>
-        </nav>
+        <Navbar />
         <main className="flex-grow container mx-auto my-8 px-4">
           {children}
         </main>
