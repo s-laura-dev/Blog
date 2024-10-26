@@ -13,7 +13,8 @@ export const Footer = () => {
             href="https://github.com/s-laura-dev" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className=" text-beige border-beige border px-2 py-2 bg-electricBlue hover:shadow-[2px_2px_0px_#f5f3e7] flex-shrink-0"
+            variant="dark"
+            className=" px-2 py-2 flex-shrink-0"
           >
             <Icon name="github" className="w-6 h-6" />
           </ButtonLink>
@@ -21,7 +22,8 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/laura-spina-80aa3b172/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className=" text-beige bg-electricBlue px-2 py-2 border-beige border hover:shadow-[2px_2px_0px_#f5f3e7] flex-shrink-0"
+            variant="dark"
+            className=" px-2 py-2 flex-shrink-0"
           >
             <Icon name="linkedin" className="w-6 h-6"/>
           </ButtonLink>

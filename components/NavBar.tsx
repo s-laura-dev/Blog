@@ -32,26 +32,26 @@ export const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="font-bold">
-        <ButtonLink className='w-full md:hidden text-electricBlue  px-5 py-2 md:border border-electricBlue font-bold' href="/">
+        <ButtonLink variant="light" className='w-full md:hidden  px-5 py-2 border-0 font-bold' href="/">
             <Icon name="cube" className='w-8 h-8 ' />
           </ButtonLink>
-          <ButtonLink className='w-full hidden md:flex text-electricBlue border-2 px-5 py-2 md:border border-electricBlue font-bold' href="/">
+          <ButtonLink variant='light' className='w-full hidden md:flex border-2 md:border px-5 py-2 font-bold' href="/">
             <span className=''>Home</span>
           </ButtonLink>
         </h1>
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-2">
-          <ButtonLink href="/blog" className="border border-electricBlue font-bold px-5 py-2">
+          <ButtonLink href="/blog" variant="light" className="border font-bold px-5 py-2">
             Blog
           </ButtonLink>
-          <ButtonLink href="/about" className="text-electricBlue border border-electricBlue font-bold px-5 py-2">
+          <ButtonLink href="/about" variant="light" className="border font-bold px-5 py-2">
             About
           </ButtonLink>
-          <ButtonLink href="/contact" className="text-electricBlue border border-electricBlue font-bold px-5 py-2">
+          <ButtonLink href="/contact" variant="light"  className="border font-bold px-5 py-2">
             Contact
           </ButtonLink>
-          <ButtonLink href="/sign-up" className="text-beige border-beige bg-electricBlue font-bold px-5 py-2">
+          <ButtonLink href="/sign-up" variant="dark" className="font-bold px-5 py-2">
             Sign-up
           </ButtonLink>
         </div>
