@@ -78,7 +78,7 @@ export const Navbar = () => {
              exit={{ opacity: 0 }}
              className="md:hidden bg-transparent absolute inset-x-0 top-16 "
            >
-             {['HOME', 'BLOG', 'ABOUT' ,'CONTACT'].map((text, i) => (
+             {['BLOG', 'ABOUT' ,'CONTACT'].map((text, i) => (
                <motion.div
                  key={text}
                  custom={i}

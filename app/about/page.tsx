@@ -14,7 +14,7 @@ const experiences = [
 // `,
 //   },
   {
-    title: 'Lead Frontend Developer',
+    title: 'Frontend Developer',
     company: 'Valtech @Louis Vuitton',
     location: 'Paris',
     date: 'Feb 2024 - present',
