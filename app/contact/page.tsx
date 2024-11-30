@@ -7,7 +7,7 @@ import Image from 'next/image';
 // app/contact/page.js
 export default function Contact() {
   return (
-    <div className="container mx-auto my-12 px-4 min-h-screen text-center">
+    <div className="container mx-auto my-12 px-4 min-h-screen max-w-[900px] text-center">
       {/* Page Title */}
       <h1 className="text-4xl font-bold mb-8">Get in Touch</h1>
 
