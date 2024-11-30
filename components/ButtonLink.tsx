@@ -7,7 +7,7 @@ interface ButtonLinkProps {
   className?: string;
   target?: string;
   rel?: string;
-  variant?: 'light' | 'dark'; // Add variant prop
+  variant?: 'light' | 'dark'; 
 }
 
 export const ButtonLink = ({
@@ -16,14 +16,13 @@ export const ButtonLink = ({
   className,
   target,
   rel,
-  variant = 'light', // Default to "light" variant
+  variant = 'light', 
   ...rest
 }: ButtonLinkProps) => {
-  // Conditional styles based on the variant
-  const textColor = variant === 'dark' ? 'text-beige' : 'text-electricBlue';
-  const bgColor = variant === 'dark' ? 'bg-electricBlue' : 'bg-beige';
-  const borderColor = variant === 'dark' ? 'border-beige' : 'border-electricBlue';
-  const shadowColor = variant === 'dark' ? 'md:hover:shadow-[2px_2px_0px_#f5f3e7]' : 'md:hover:shadow-[2px_2px_0px_#2563EB]';
+  const textColor = variant === 'dark' ? 'text-white' : 'text-black';
+  const bgColor = variant === 'dark' ? 'bg-black' : 'bg-white';
+  const borderColor = variant === 'dark' ? 'border-white' : 'border-black';
+  const shadowColor = variant === 'dark' ? 'md:hover:shadow-[2px_2px_0px_#fff]' : 'md:hover:shadow-[2px_2px_0px_#000]';
 
   return (
     <Link

@@ -5,11 +5,12 @@ interface CustomLinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
+  target?: string;
 }
 
-export const CustomLink = ({ href, children, className, ...props }: CustomLinkProps) => {
+export const CustomLink = ({ href, target, children, className, ...props }: CustomLinkProps) => {
   return (
-    <Link href={href} className={`text-electricBlue hover-underline ${className} `} {...props}>
+    <Link href={href} target={target} className={`text-black ${className} `} {...props}>
       {children}
     </Link>
   );

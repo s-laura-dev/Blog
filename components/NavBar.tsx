@@ -28,7 +28,7 @@ export const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-beige w-full px-4 py-3 fixed shadow-electricBlue shadow-md">
+    <nav className="bg-white w-full px-4 py-3 fixed max-w-[900px] mx-auto">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="font-bold">
@@ -42,7 +42,7 @@ export const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-2">
-          <ButtonLink href="/blog" variant="light" className="border font-bold px-5 py-2">
+          <ButtonLink target="_blank" href="https://medium.com/@info.lauraspina" variant="light" className="border font-bold px-5 py-2">
             Blog
           </ButtonLink>
           <ButtonLink href="/about" variant="light" className="border font-bold px-5 py-2">
@@ -51,9 +51,9 @@ export const Navbar = () => {
           <ButtonLink href="/contact" variant="light"  className="border font-bold px-5 py-2">
             Contact
           </ButtonLink>
-          <ButtonLink href="/sign-up" variant="dark" className="font-bold px-5 py-2">
+          {/* <ButtonLink href="/sign-up" variant="dark" className="font-bold px-5 py-2">
             Sign-up
-          </ButtonLink>
+          </ButtonLink> */}
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -69,7 +69,7 @@ export const Navbar = () => {
              exit={{ opacity: 0 }}
              className="md:hidden bg-transparent absolute inset-x-0 top-16 "
            >
-             {['HOME', 'BLOG', 'ABOUT','SIGN-UP'].map((text, i) => (
+             {['HOME', 'BLOG', 'ABOUT' ,'CONTACT'].map((text, i) => (
                <motion.div
                  key={text}
                  custom={i}
@@ -77,9 +77,9 @@ export const Navbar = () => {
                  animate="visible"
                  exit="hidden"
                  variants={linkVariants}
-                 className="w-full border-t-2 border-x-2  border-electricBlue py-4  bg-beige text-center last:shadow-md last:border-b-2"
+                 className="w-full border-t-2 border-x-2 flex align-center justify-center border-black h-12  bg-white text-center last:shadow-md last:border-b-2"
                >
-                 <CustomLink href={`/${text.toLowerCase()}`} className="text-electricBlue font-bold hover:{}">
+                 <CustomLink target={text === 'BLOG' ? "_blank" : ''} href={text === 'BLOG' ? 'https://medium.com/@info.lauraspina' : `/${text.toLowerCase()}`} className="text-black py-3 w-full h-full font-bold hover:{}">
                    {text}
                  </CustomLink>
                </motion.div>

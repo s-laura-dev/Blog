@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        beige: "#f5f3e7", // Light beige background color
-        electricBlue: "#2563eb", // Electric blue for typography and accents
+        beige: "#f5f3e7", 
+        electricBlue: "#2563eb", 
       },
     },
   },

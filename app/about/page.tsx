@@ -15,8 +15,8 @@ export default function About() {
           className="rounded-full mx-auto mb-4"
         />
         <h1 className="text-4xl font-bold mb-4">Hi 👋, I'm Laura</h1>
-        <p className="text-xl text-electricBlue">Frontend Developer @Christian Dior | Based in Paris 🇫🇷</p>
-        <p className="text-lg text-electricBlue mt-2">
+        <p className="text-xl text-black">Frontend Developer @Christian Dior | Based in Paris 🇫🇷</p>
+        <p className="text-lg text-black mt-2">
         React | Next.js | Vue | Nuxt | Node.js | GraphQL | Tailwind CSS
         </p>
       </section>
