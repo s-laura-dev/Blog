@@ -28,8 +28,8 @@ export const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-white w-full px-4 py-3 fixed max-w-[900px] mx-auto">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-white w-full px-4 py-3 fixed z-10 mx-auto">
+      <div className="container max-w-[900px] mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="font-bold">
         <ButtonLink variant="light" className='w-full md:hidden  px-5 py-2 border-0 font-bold' href="/">
@@ -50,6 +50,15 @@ export const Navbar = () => {
           </ButtonLink>
           <ButtonLink href="/contact" variant="light"  className="border font-bold px-5 py-2">
             Contact
+          </ButtonLink>
+          <ButtonLink
+            href="https://github.com/s-laura-dev" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            variant="light"
+            className=" px-2 py-2 flex-shrink-0"
+          >
+            <Icon name="github" className="w-6 h-6" />
           </ButtonLink>
           {/* <ButtonLink href="/sign-up" variant="dark" className="font-bold px-5 py-2">
             Sign-up

@@ -22,26 +22,25 @@ export default function Home() {
         </p>
       </section>
 
-        {/* About Me */}
-     
-        <section className="bg-gray-800 text-white p-8  shadow-lg mb-12">
-        <h2 className="text-2xl font-semibold mb-4 text-center">A Little About Me</h2>
-        <p className="text-lg text-gray-300 mb-4">
+      {/* About Me */}
+      <section className="relative bg-white text-black font-semibold border border-black shadow-[2px_2px_0px_#000] p-6 text-center mb-12">
+        <h2 className="text-xl font-semibold mb-4 text-center">A Little About Me</h2>
+        <p className="text-md font-normal text-black mb-4">
           My journey into software development wasn’t a straight path. I’ve worked in sales and insurance, studied finance, and have always been deeply enthusiastic about markets and investments. This non-traditional background has shaped me into a developer with a diverse range of influences and skills.
         </p>
-        <p className="text-lg text-gray-300 mb-4">
+        <p className="text-md font-normal text-black mb-4">
           I’m passionate about blending technology with real-world applications. Recently, I’ve been diving into data analysis with Python to broaden my programming abilities and explore how code can unlock insights in finance and beyond.
         </p>
       </section>
 
       {/* Latest Project Showcase */}
-      <section className="bg-gray-100 p-8  shadow-lg mb-12">
-        <h2 className="text-2xl font-semibold mb-4 text-center">My Latest Project</h2>
-        <p className="text-lg text-gray-700 mb-4">
+      <section className="relative bg-white text-black font-semibold border border-black shadow-[2px_2px_0px_#000] p-6 text-center mb-12">
+        <h2 className="text-xl font-semibold mb-4 text-center">My Latest Project</h2>
+        <p className="text-md font-normal text-black mb-4">
           Recently, I built a <strong>Compound Interest Calculator</strong> using Python. It’s a tool designed to help individuals better understand how their investments grow over time.
         </p>
         <div className="flex justify-center">
-          <ButtonLink target='_blank' href="https://compound-interest-calculator-pndz.onrender.com/"  className="border w-auto border-black text-black px-6 py-3 text-lg font-semibold">
+          <ButtonLink target='_blank' href="https://compound-interest-calculator-pndz.onrender.com/"  className="border w-auto border-black text-black px-6 py-3 text-md font-semibold">
             View the Calculator 📊
           </ButtonLink>
         </div>
@@ -50,12 +49,12 @@ export default function Home() {
     
 
       {/* Blog Introduction and Quick Link */}
-      <section className="text-center">
-        <h2 className="text-2xl font-semibold mb-4">Welcome to My Blog</h2>
-        <p className="text-lg text-gray-600 mb-6">
-          I write about all things frontend, from React and Vue.js to JavaScript, CSS, and more.
+      <section className="relative bg-white text-electricBlue font-semibold border border-electricBlue shadow-[2px_2px_0px_#2563eb] p-6 text-center mb-12">
+        <h2 className="text-xl font-semibold mb-4">Welcome to My Blog</h2>
+        <p className="text-md font-normal text-electricBlue mb-6">
+        I share my thoughts on all things frontend, from React and Vue.js to JavaScript and CSS, as well as cool insights into finance, investments, and the fascinating intersection of technology and numbers.
         </p>
-        <ButtonLink target="_blank" href="https://medium.com/@info.lauraspina" className="border border-black m-x-auto place-self-center w-fit text-black px-6 py-3 text-lg font-semibold ">
+        <ButtonLink target="_blank" href="https://medium.com/@info.lauraspina" className="border border-electricBlue m-x-auto place-self-center w-fit text-electricBlue px-6 py-3 text-md font-semibold ">
             Visit My Blog 🚀
         </ButtonLink>
       </section>
