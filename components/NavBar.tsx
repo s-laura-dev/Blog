@@ -1,12 +1,13 @@
 // app/components/Navbar.tsx
 'use client'
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CustomLink } from './Link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ButtonLink } from './ButtonLink';
 import { HamburgerMenu } from './HamburgerMenu';
 import { Icon } from './Icon';
+import { usePathname } from 'next/navigation';
 
 
 const linkVariants = {
@@ -24,8 +25,13 @@ const linkVariants = {
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname()
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  useEffect(() => {
+    setMenuOpen(false); 
+  }, [pathname]);
 
   return (
     <nav className="bg-white w-full px-4 py-3 fixed z-10 mx-auto">
