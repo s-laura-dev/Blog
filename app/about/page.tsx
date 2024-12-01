@@ -1,18 +1,6 @@
 // app/page.js
-import {CustomLink} from '@/components/Link';
-import Image from 'next/image';
 
 const experiences = [
-//   {
-//     title: 'Frontend Developer',
-//     company: 'Valtech @Christian Dior',
-//     location: 'Paris',
-//     date: 'Jan 2025 - Present',
-//     description: 
-//       `- Moved to the Dior project because of my React and Next.js experience.
-//       - Contributed to the revamp of the website with React, Next.js, and GraphQL.
-// `,
-//   },
   {
     title: 'Frontend Developer',
     company: 'Valtech @Louis Vuitton',

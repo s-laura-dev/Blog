@@ -34,27 +34,25 @@ export default function Home() {
       </section>
 
       {/* Latest Project Showcase */}
-      <section className="relative bg-white text-black font-semibold border border-black shadow-[2px_2px_0px_#000] p-6 text-center mb-12">
+      <section className="relative flex flex-col items-center bg-white text-black font-semibold border border-black shadow-[2px_2px_0px_#000] p-6 text-center mb-12">
         <h2 className="text-xl font-semibold mb-4 text-center">My Latest Project</h2>
         <p className="text-md font-normal text-black mb-4">
           Recently, I built a <strong>Compound Interest Calculator</strong> using Python. It’s a tool designed to help individuals better understand how their investments grow over time.
         </p>
-        <div className="flex justify-center">
-          <ButtonLink target='_blank' href="https://compound-interest-calculator-pndz.onrender.com/"  className="border w-auto border-black text-black px-6 py-3 text-md font-semibold">
+          <ButtonLink target='_blank' href="https://compound-interest-calculator-pndz.onrender.com/"  className="border w-fit border-black text-black px-6 py-3 text-md font-semibold">
             View the Calculator 📊
           </ButtonLink>
-        </div>
       </section>
 
     
 
       {/* Blog Introduction and Quick Link */}
-      <section className="relative bg-white text-electricBlue font-semibold border border-electricBlue shadow-[2px_2px_0px_#2563eb] p-6 text-center mb-12">
+      <section className="relative flex flex-col items-center bg-white text-electricBlue font-semibold border border-electricBlue shadow-[2px_2px_0px_#2563eb] p-6 text-center mb-12">
         <h2 className="text-xl font-semibold mb-4">Welcome to My Blog</h2>
         <p className="text-md font-normal text-electricBlue mb-6">
         I share my thoughts on all things frontend, from React and Vue.js to JavaScript and CSS, as well as cool insights into finance, investments, and the fascinating intersection of technology and numbers.
         </p>
-        <ButtonLink target="_blank" href="https://medium.com/@info.lauraspina" className="border border-electricBlue m-x-auto place-self-center w-fit text-electricBlue px-6 py-3 text-md font-semibold ">
+        <ButtonLink target="_blank" href="https://medium.com/@info.lauraspina" className="border border-electricBlue w-fit text-electricBlue px-6 py-3 text-md font-semibold ">
             Visit My Blog 🚀
         </ButtonLink>
       </section>
