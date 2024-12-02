@@ -3,7 +3,7 @@ import { Icon } from "./Icon";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black text-white py-4 left-0 w-screen">
+    <footer className="bg-black text-white py-4 left-0 w-full">
       <div className="container px-4 mx-auto flex justify-between items-center max-w-[900px] ">
         <div>
           <p className="text-sm">&copy; {new Date().getFullYear()} Laura Spina. All rights reserved.</p>
