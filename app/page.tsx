@@ -1,6 +1,5 @@
 // app/page.js
 import { ButtonLink } from '@/components/ButtonLink';
-import {CustomLink} from '@/components/Link';
 import Image from 'next/image';
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
           className='mx-auto mb-4'
         />
         <h1 className="text-3xl font-bold mb-4">Hi, I'm Laura</h1>
-        <p className="text-lg text-gray-600">Frontend Developer @Louis Vuitton 💄| Finance and Data enthusiast 📈 | Based in Paris 🇫🇷</p>
+        <p className="text-lg text-gray-600">Frontend Developer @Christian Dior 💄| Finance and Data enthusiast 📈 | Based in Paris 🇫🇷</p>
         <p className="text-md text-gray-500">
           React | Next.js | Vue | Nuxt | Node.js | Python | SQL | GraphQL | Tailwind CSS
         </p>

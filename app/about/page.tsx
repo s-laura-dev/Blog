@@ -3,9 +3,21 @@
 const experiences = [
   {
     title: 'Frontend Developer',
+    company: 'Valtech @Christian Dior',
+    location: 'Paris',
+    date: 'Jan 2025 - present',
+    description: 
+      `- Leading the A/B test team for a global luxury brand.
+      - Developed and maintained user interfaces with Vue.js, TypeScript, and JavaScript.
+      - Implemented and analyzed A/B tests using Qubit to optimize performance and user engagement.
+      - Conducted unit tests and web performance monitoring.,
+`,
+  },
+  {
+    title: 'Frontend Developer',
     company: 'Valtech @Louis Vuitton',
     location: 'Paris',
-    date: 'Feb 2024 - present',
+    date: 'Feb 2024 - Jan 2025',
     description: 
       `- Leading the A/B test team for a global luxury brand.
       - Developed and maintained user interfaces with Vue.js, TypeScript, and JavaScript.
