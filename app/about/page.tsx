@@ -7,10 +7,10 @@ const experiences = [
     location: 'Paris',
     date: 'Jan 2025 - present',
     description: 
-      `- Leading the A/B test team for a global luxury brand.
-      - Developed and maintained user interfaces with Vue.js, TypeScript, and JavaScript.
-      - Implemented and analyzed A/B tests using Qubit to optimize performance and user engagement.
-      - Conducted unit tests and web performance monitoring.,
+      `- Developed and maintained user interfaces with React, Next.js, TypeScript and GraphQL.
+      - Implemented animation with framer motion.
+      - Contributed to the Design System with Storybook.
+      - e2e tests with Playwright.
 `,
   },
   {
